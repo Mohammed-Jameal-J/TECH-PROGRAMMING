@@ -1,4 +1,5 @@
 class Car:
+    owner = "John Doe" #class attribute
     def __init__(self,brand,colour): #method to initialize object attributes
         print(self)
         self.brand = brand #object attribute
@@ -15,3 +16,5 @@ print(getattr(car1,"brand"))
 
 car2 = Car("Honda","Blue")
 print(car2.start_engine())
+
+print(car1.owner) #accessing class attribute
